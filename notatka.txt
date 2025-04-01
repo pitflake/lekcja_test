@@ -11,3 +11,7 @@ cat /C/Users/Uczeń/Desktop/git/id_rsa.txt.pub
 ssh -T git@github.com
 git config --global user.email "pawel.platek2115@gmail.com"
 git config --global user.name "pitflake"
+git commit -m "komentarz"
+git checkout -b develop
+
+git push -- set-upstream origin develop
