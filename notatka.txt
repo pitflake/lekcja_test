@@ -1,0 +1,13 @@
+/C/Users/Uczeń/Desktop/git
+/C/Users/Uczeń/Desktop/git/id_rsa.txt
+ssh-keygen -t rsa -b 4096 -C "pawel.platek2115@gmail.com"
+
+cd /C/Users/Uczeń/Desktop/git
+
+eval $(ssh-agent -s)
+
+cat /C/Users/Uczeń/Desktop/git/id_rsa.txt.pub
+
+ssh -T git@github.com
+git config --global user.email "pawel.platek2115@gmail.com"
+git config --global user.name "pitflake"
